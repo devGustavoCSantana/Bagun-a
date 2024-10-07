@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alterar senha Login</title>
+    <link rel="stylesheet" href="alterarsenhalogin.css">
+    <link rel="stylesheet" href="mediaquerysenhalogin.css">
+</head>
+
+<body>
+    <main>
+        <section class="conteudo" id="cont">
+            <div class="titulo">
+                <h1>Alterar Senha Login</h1>
+            </div>
+            <form>
+                <div class="senha">
+                    <label for="senha">Senha Atual:</label>
+                    <input type="password" name="senha" id="senha">
+                </div>
+
+                <div class="senha">
+                    <label for="senha">Nova Senha:</label>
+                    <input type="password" name="senhaatual" id="senhaatual">
+                </div>
+
+                <div class="senha">
+                    <label for="confsenha">Confirmar nova senha:</label>
+                    <input type="password" name="confsenha" id="confsenha">
+                </div>
+                <div class="paibtn">
+                    <div class="botao">
+                        <button type="submit">
+                            <div class="aspas">></div>Alterar
+                        </button>
+                    </div>
+                </div>
+            </form>
+            <div vw class="enabled">
+                <div vw-access-button class="active"></div>
+                <div vw-plugin-wrapper>
+                    <div class="vw-plugin-top-wrapper"></div>
+                </div>
+            </div>
+            <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+            <script>
+                new window.VLibras.Widget('https://vlibras.gov.br/app');
+            </script>
+        </section>
+    </main>
+</body>
+
+</html>

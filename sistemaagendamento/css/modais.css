@@ -1,0 +1,592 @@
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display:800,500,400,600,italic|Poppins:500");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background: linear-gradient(154deg, #A18D50 11.28%, #615B49 43.93%, #515B8B 83.83%);
+    filter: blur(0.5px);
+    font-family: "Playfair Display", serif;
+}
+
+header {
+    width: 100vw;
+    height: 85px;
+    background-color: #262E5D;
+    border-radius: 0px 0px 30px 30px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+nav ul {
+    width: 100%;
+    display: flex;
+}
+
+nav ul li {
+    list-style-type: none;
+    padding: 20px;
+    font-family: Poppins;
+}
+
+nav ul li i {
+    color: #E61C62;
+    font-size: 1.5rem;
+}
+
+.logo {
+    margin: auto;
+    color: #FFFFFF;
+    line-height: 18px;
+    font-size: 2rem;
+
+}
+
+nav ul li a {
+    color: #E61C62;
+    font-size: 1.5rem;
+    text-decoration: none;
+    position: relative;
+    display: flex;
+}
+
+.icones a{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.plinks {
+    padding: 5px;
+    font-size: 0.7rem;
+    font-family: Poppins;
+}
+
+nav ul li span.plinks{
+    display: none;
+}
+
+nav ul li:hover span.plinks{
+    display: block;
+    color: #A18D50;
+    position: absolute;
+    top: 20px;
+    transform: scale(1.2);
+}
+
+nav ul li:hover i {
+    color: #A18D50;
+    transform: scale(1.2);
+}
+
+.usuario{
+    display: flex;
+    justify-content: end;
+}
+
+main {
+    margin-top: 27px;
+    margin-bottom: 27px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section {
+    margin: auto;
+    width: 100%;
+    max-width: 1065px;
+    height: 524px;
+    padding: 1rem;
+    border-radius: 30px;
+    background: #F2F2F2;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+dialog {
+    border: none;
+    width: 607px;
+    height: 463px;
+    border-radius: 30px;
+    background: rgba(38, 46, 93, 0.95);
+    box-shadow: 15px 15px 5px 0px rgba(0, 0, 0, 0.30);
+    display: flex;
+    margin-left: 21%;
+    position: relative;
+    flex-direction: column;
+}
+.data{
+    display: flex;
+    font-family: Poppins;
+    width: 30%;
+    height: 30%;
+    margin-left:5%;
+    margin-top: 3%;
+}
+.dia{
+    color: #E61C62;
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 600;
+}
+.mes{
+    color: rgba(255, 255, 255, 0.88);
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    padding-left: 10%;
+
+}
+.nome {
+    display: flex;
+    flex-direction: column;
+    font-family: Poppins;
+    color: #F2F2F2;
+    width: 480px;
+    margin-left: 5%;
+}
+.nome label {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0.024px;
+    padding-left: 45px;
+}
+.nome input {
+    border-radius: 30px;
+    border: 3px solid #E61C62;
+    background: rgba(217, 217, 217, 0.00);
+    width: 100%;
+    height: 40px; 
+}
+.dois {
+    display: flex;
+    font-family: Poppins;
+    color: #F2F2F2;
+    width: 480px;
+    margin-left: 9%;
+    justify-content: space-between;
+    height: 60px;
+    margin-top: 6px;
+}
+.profissional {
+    display: flex;
+    flex-direction: column;
+}
+.profissional label {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0.024px;
+    padding-left: 15px;
+}
+.profissional select {
+    width: 225px;
+    height: 40px;
+    border-radius: 30px;
+    border: 3px solid #E61C62;
+    color: #F2F2F2;
+    background: rgba(38, 46, 93, 0.95) url(../imgs/setabranca.svg) 95.5% 50% no-repeat;
+    -webkit-appearance: none;
+}
+.servico{
+    display: flex;
+    flex-direction: column;
+}
+.servico label{
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0.024px;
+    padding-left: 15px;
+}
+.servico select{
+    width: 225px;
+    height: 40px;
+    border-radius: 30px;
+    border: 3px solid #E61C62;
+    color: #F2F2F2;
+    background: rgba(38, 46, 93, 0.95) url(../imgs/setabranca.svg) 95.5% 50% no-repeat;
+    -webkit-appearance: none;
+}
+.telefone {
+    display: flex;
+    flex-direction: column;
+    font-family: Poppins;
+    color: #F2F2F2;
+    width: 480px;
+    margin-left:9%;
+}
+.telefone label {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0.024px;
+    padding-left: 21px;
+}
+.telefone input{
+    border-radius: 30px;
+    border: 3px solid #E61C62;
+    background: rgba(217, 217, 217, 0.00);
+    width: 100%;
+    height: 40px;
+}
+.horarios select{
+    width: 171px;
+    height: 40px;
+    border-radius: 30px;
+    background: #A18D50 url(../imgs/setaamarela.svg) 95.5% 50% no-repeat;
+    -webkit-appearance: none;
+    margin-left: 9%;
+    color: #F2F2F2;
+    font-family: Poppins;
+    font-size: 20px;
+    padding-left: 10px;
+    font-style: normal;
+    font-weight: 400;
+    position:relative;
+    top: 2.6rem;
+}
+.confirmar {
+    width: 193px;
+    height: 66px;
+    border-radius: 64px;
+    border: 3px solid #E61C62;
+    background:none;
+    color: #E61C62;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    margin-left: 60%;
+    margin-bottom:5%;
+}
+.fechar {
+    width: 55px;
+    height: 55px;
+    border: 3px solid #A18D50;
+    color: #A18D50;
+    font-size: 45px;
+    border-radius: 10px;
+    background: none;
+    position: absolute;
+    top:21px;
+    right:28px;
+        
+}
+    
+.cancelar {
+    width: 611.127px;
+    height: 319px;
+    border-radius: 30px;
+    background: rgba(38, 46, 93, 0.95);
+    box-shadow: 15px 15px 5px 0px rgba(0, 0, 0, 0.30);
+    display:flex;
+    margin-top: 8%;
+    justify-content:center;
+}
+.certeza {
+    display: flex;
+    width: 775.595px;
+    height: 50.162px;
+    flex-direction: column;
+    justify-content: center;
+    color: rgba(255, 255, 255, 0.88);
+    font-family: Poppins;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 600;
+    margin-left: 30%;
+    margin-top: 12%;
+}
+.naocancela {
+    width: 193px;
+    height: 66px;
+    background:none;
+    border: 3px solid #A18D50;
+    border-radius: 64px;
+    color: #A18D50;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    position: relative;
+    top: 20%;
+    left:8%;
+}
+.novadata{
+    display:flex;
+    flex-direction:column;
+    font-family: Poppins;
+    padding: 10px 50px;
+    gap:9px;
+}
+.escolha{
+    color: rgba(255, 255, 255, 0.88);
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 600;
+    text-wrap:nowrap;
+}
+.novodia {
+    width: 171px;
+    height: 40px;
+    border-radius: 30px;
+    background: #A18D50 url(../imgs/setaamarela.svg) 95.5% 50% no-repeat;
+    -webkit-appearance: none;
+    color: #F2F2F2;
+    font-family: Poppins;
+    font-size: 20px;
+    padding-left:10px;
+}
+.funcionario{
+    display: flex;
+    font-family: Poppins;
+    width: 75%;
+    height: 30%;
+    margin-left:5%;
+    margin-top: 3%;
+    margin-bottom: 15px;
+    position: relative;
+}
+#foto{
+    background: transparent;
+    border: transparent;
+    height: 60px;
+    width: 77px;
+    color:#F2F2F2;
+    font-family: Poppins;
+    position:absolute;
+    top:100px;
+    left:5px;
+}
+#foto::before{
+    content: 'Alterar Foto';
+}
+#icon {
+    position:absolute;
+    top:100px;
+    left:90px;
+}
+.nome{
+    justify-content:center;
+}
+.infotres{
+    display: flex;
+    font-family: Poppins;
+    color: #F2F2F2;
+    width: 480px;
+    margin-left: 9%;
+    justify-content: space-between;
+    height: 60px;
+    margin-top: 6px;
+    gap:15px;
+}
+.infodois{
+    display: flex;
+    font-family: Poppins;
+    color: #F2F2F2;
+    width: 480px;
+    margin-left: 9%;
+    justify-content: space-between;
+    height: 60px;
+    margin-top: 6px;
+    gap:15px;
+}
+.contato{
+    display:flex;
+    flex-direction:column;
+}
+.contato input{
+    border-radius: 30px;
+    border: 3px solid #E61C62;
+    background: rgba(217, 217, 217, 0.00);
+    width: 100%;
+    height: 40px;
+}
+.contato label{
+    margin-left:15px;
+}
+.situacao {
+    width: 150px;
+    height: 36px;
+    border:3px solid #E61C62;
+    border-radius: 30px;
+    background: transparent url(../imgs/setabranca.svg) 95.5% 50% no-repeat;
+    -webkit-appearance: none;
+    color: #F2F2F2;
+    font-family: Poppins;
+    font-size: 20px;
+    padding-left:10px;
+    margin-top:24px;
+}
+.cargo {
+    width: 150px;
+    height: 36px;
+    border:3px solid #E61C62;
+    border-radius: 30px;
+    background: transparent url(../imgs/setabranca.svg) 95.5% 50% no-repeat;
+    -webkit-appearance: none;
+    color: #F2F2F2;
+    font-family: Poppins;
+    font-size: 20px;
+    padding-left:10px;
+    margin-top:24px;
+}
+.correiodigital {
+    display:flex;
+    flex-direction:column;
+}
+.correiodigital input{
+    border-radius: 30px;
+    border: 3px solid #E61C62;
+    background: rgba(217, 217, 217, 0.00);
+    width: 250px;
+    height: 40px;
+}
+.correiodigital label{
+    margin-left:15px;
+}
+.ceps{
+    display:flex;
+    flex-direction:column;
+}
+.ceps input {
+    border-radius: 30px;
+    border: 3px solid #E61C62;
+    background: rgba(217, 217, 217, 0.00);
+    width: 216px;
+    height: 40px;
+}
+.ceps label{
+    margin-left:15px;
+}
+.enderecos input{
+    border-radius: 30px;
+    border: 3px solid #E61C62;
+    background: rgba(217, 217, 217, 0.00);
+    width: 250px;
+    height: 35px;
+}
+.enderecos label {
+    margin-left:15px;
+}
+.comp input {
+    border-radius: 30px;
+    border: 3px solid #E61C62;
+    background: rgba(217, 217, 217, 0.00);
+    width: 216px;
+    height: 35px;
+}
+.comp label{
+    margin-left:15px;
+}
+.bairros input{
+    border-radius: 30px;
+    border: 3px solid #E61C62;
+    background: rgba(217, 217, 217, 0.00);
+    width: 100%;
+    height: 35px;
+}
+.bairros label{
+    margin-left:15px;
+}
+.cidades input {
+    border-radius: 30px;
+    border: 3px solid #E61C62;
+    background: rgba(217, 217, 217, 0.00);
+    width: 100%;
+    height: 35px;
+}
+.cidades label {
+    margin-left:15px;
+}
+.ufa input {
+     border-radius: 30px;
+    border: 3px solid #E61C62;
+    background: rgba(217, 217, 217, 0.00);
+    width: 100%;
+    height: 35px;
+}
+.ufa label {
+    margin-left:15px;
+}
+.confirmar {
+    margin-top:16px;
+}
+.cancelar {
+    width: 193px;
+    height: 66px;
+    border-radius: 30px;
+    background: rgba(38, 46, 93, 0.95);
+    display:flex;
+    border: 3px solid #A18D50;
+    justify-content:center;
+}
+footer {
+    width: 100vw;
+    height: 85px;
+    background-color: #262E5D;
+    border-radius: 30px 30px 0px 0px;
+    text-align: center;
+}
+
+footer p {
+    padding: 15px;
+    color:  #E61C62;
+    font-family: Poppins;
+}
+
+@media screen and (max-width: 425px) {
+
+    body {
+        overflow-y: auto;
+    }
+
+    section {
+        max-width: 365px;
+        height: auto;
+    }
+
+    footer {
+        background: none;
+    }
+
+    footer p {
+        -webkit-text-stroke-width: 1;
+        -webkit-text-stroke-color: #303136;
+        font-size: 1rem;
+    }
+}
+
+@media screen and (min-width:426px ) and ( max-width: 768px) {
+
+    section {
+        max-width: 600px;
+        height: auto;
+    }
+
+    footer {
+        background: none;
+    }
+
+    footer p {
+        -webkit-text-stroke-width: 1;
+        -webkit-text-stroke-color: #303136;
+        font-size: 1rem;
+    }
+}
